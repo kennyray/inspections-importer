@@ -1,0 +1,75 @@
+22 = 87
+
+87 - 22 = 65;
+
+offset = 65 up to Z
+
+22 through 25 / offset 65
+26 through 52 / 'A' + offset 
+53 through 79 / 'B' + offset
+
+<26 / 65
+26 - 26 = 0 + 65 = A
+53 - 
+
+
+ASCII 65 is A
+
+A=1, Z=26, AA=27, AZ=52, BA=53, BZ=78
+ARRAY A=0, so to get to 65 you add 65, thus offset = 65
+ARRAY AA=26, so to get to 65 you add 39.
+ARRAY BA=52, so to get to 65 you add 13.
+
+Array          REAL
+range 0 - 25  for 1 - 26  
+
+range 26 - 51   for 27 - 52
+
+range 52 - 77   for 53 - 78
+
+
+
+26 to = 65  so 65-26=39  
+offset 39
+
+53 to  65  so 65-53=12
+offset 12
+
+________________________________________________________________
+
+Plan for mapping spreadsheet columns to violation codes and descriptions
+
+W - BY COLUMNS (not all used)
+
+22 - 79 (79-22)
+
+57 violation codes
+
+Column,code,desc,desc_rewrite,severity(from lookup)
+W,'22-24-4','Intermediate: (E) Except ...','What this means is...',2
+
+
+
+
+
+
+
+***********************
+Y = temp control = 03B = Receiving and holding PH/TCS foods hot
+AD = cross contamination = 08A = Separating raw animal foods from: each other, RTE foods and unwashed produce
+
+violation descriptions table
+
+spreadsheet_column              = Y
+violation_type                  = 03B
+violation_description           = Receiving and holding PH/TCS foods hot
+violation_description_rewrite   = Failed to maintain proper temperature of hot foods
+violation_severity              = basic,intermediate,high
+
+inspection violations table
+
+spreadsheet_column              = Y
+total_number_of_violations      = 1
+inspection_number               = 13545
+
+
